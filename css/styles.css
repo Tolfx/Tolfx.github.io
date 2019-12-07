@@ -124,31 +124,6 @@ figure {
     width: 50px;
     height: 50px;
 }
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-    body {
-        height: 40%;
-        flex-wrap: wrap;
-        font-family: 'Amaranth';font-size: 22px;
-        background-image: url('../images/background.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-color: rgb(58, 168, 113);
-        color: lavender;
-    }
-    .header {
-        list-style: none;
-        color: lavender;
-        margin: 20px auto;
-        text-align: right;
-    }
-    li {
-        display: inline-block;
-        padding-right: 12%;
-        margin: 10px auto;
-    }
-  }
   
   /* Tablet Styles */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -193,3 +168,27 @@ figure {
         margin: 10px auto;
     }
   }
+
+@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio : 3) { 
+    body {
+        height: 40%;
+        flex-wrap: wrap;
+        font-family: 'Amaranth';font-size: 22px;
+        background-image: url('../images/background.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: rgb(58, 168, 113);
+        color: lavender;
+    }
+    .header {
+        list-style: none;
+        color: lavender;
+        margin: 20px auto;
+        text-align: right;
+    }
+    li {
+        display: inline-block;
+        padding-right: 12%;
+        margin: 10px auto;
+    }
+}
