@@ -124,15 +124,23 @@ figure {
     height: 50px;
 }
 
-@media (max-width: 991px) {
-    .latest-posted-tasks-big {
-      text-align: center;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #F09A9D; /* Red */
     }
-    .latest-posted-tasks-big > * {
-      text-align: initial;
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #F5CF8E; /* Yellow */
     }
-    .latest-posted-tasks-big > .grid_task {
-      display: inline-block;
-      float: none;
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    body {
+      background-color: #B2D6FF; /* Blue */
     }
   }
