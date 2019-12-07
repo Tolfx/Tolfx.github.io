@@ -143,6 +143,11 @@ figure {
         margin: 20px auto;
         text-align: right;
     }
+    li {
+        display: inline-block;
+        padding-right: 12%;
+        margin: 10px auto;
+    }
   }
   
   /* Tablet Styles */
@@ -163,6 +168,11 @@ figure {
         margin: 20px auto;
         text-align: right;
     }
+    li {
+        display: inline-block;
+        padding-right: 12%;
+        margin: 10px auto;
+    }
   }
   
   /* Desktop Styles */
@@ -176,5 +186,10 @@ figure {
         background-repeat: no-repeat;
         background-color: rgb(58, 168, 113);
         color: lavender;
+    }
+    li {
+        display: inline-block;
+        padding-right: 16%;
+        margin: 10px auto;
     }
   }
