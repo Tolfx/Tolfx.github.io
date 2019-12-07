@@ -5,6 +5,8 @@
     text-align: right;
 }
 
+.element::-webkit-scrollbar { width: 0 !important }
+
 li {
     display: inline-block;
     padding-right: 16%;
@@ -40,6 +42,7 @@ section header {
 section {
     text-align: center;
     padding: 8%;
+    
 }
 
 section .button {
@@ -54,6 +57,11 @@ section .button {
     margin-left: 5%;
     border: none;
     border-radius: 5px;
+    
+}
+
+section .button:hover {
+    background: white;
 }
 
 ::-webkit-scrollbar {
@@ -93,6 +101,7 @@ section div {
     flex-direction: column;
     align-items: center;
     margin: 20px auto;
+    
 }
 
 .logos {
@@ -101,6 +110,7 @@ section div {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .logos figure {
@@ -125,70 +135,143 @@ figure {
     height: 50px;
 }
   
-  /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
-        height: 50%;
-        flex-wrap: wrap;
-        font-family: 'Amaranth';font-size: 22px;
-        background-image: url('../images/background.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-color: rgb(58, 168, 113);
-        color: lavender;
+@media screen and (max-width: 1140px) {
+    section nav {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .header {
-        list-style: none;
-        color: lavender;
-        margin: 20px auto;
-        text-align: right;
-    }
-    li {
-        display: inline-block;
-        padding-right: 12%;
-        margin: 10px auto;
-    }
-  }
-  
-  /* Desktop Styles */
-  @media only screen and (min-width: 961px) {
-    body {
-        height: 100%;
-        flex-wrap: wrap;
-        font-family: 'Amaranth';font-size: 22px;
-        background-image: url('../images/background.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-color: rgb(58, 168, 113);
-        color: lavender;
-    }
-    li {
-        display: inline-block;
-        padding-right: 16%;
-        margin: 10px auto;
-    }
-  }
 
-@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio : 3) { 
-    body {
-        height: 40%;
-        flex-wrap: wrap;
-        font-family: 'Amaranth';font-size: 22px;
-        background-image: url('../images/background.jpg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-color: rgb(58, 168, 113);
-        color: lavender;
-    }
-    .header {
-        list-style: none;
-        color: lavender;
-        margin: 20px auto;
-        text-align: right;
-    }
     li {
+        font-size: 24px;
+        padding-right: 8%;
+    }
+
+
+
+    .logos {
+        padding: 8%;
+        clear: both;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 80px 50px 0px 80px;   
+    }
+
+    .logos figure img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    figure figcaption {
+        font-family: 'Roboto Black';
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    li {
+        font-size: 20px;
+        padding-right: 8%;
+    }
+
+    section nav {
+        font-size: 14px;
+        line-height: 26px;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: lavender;
+        font-size: 20px;
+        
+    }
+
+    .logos {
+        padding: 8%;
+        clear: both;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 160px 30px 0px 80px;   
+    }
+
+
+
+    .logos figure img {
+        width: 50px;
+        height: 50px;
+    }
+
+    section .button {
+        font-size: 24px;
+    }
+
+    section .button:hover {
+        background: white;
+        font-size: 24px;
+        margin-top: 29px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    li {
+        font-size: 12px;
+        padding-right: 8%;
+    }
+
+    section nav {
+        font-size: 14px;
+        line-height: 26px;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: lavender;
+        font-size: 20px;
+        
+    }
+
+    section .button {
+        font-size: 24px;
+    }
+
+    .logos figure img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logos figure {
         display: inline-block;
-        padding-right: 12%;
-        margin: 10px auto;
+        width: auto;
+        margin: 20 auto;
+        padding: 25px;
+        margin: 2px;
+        position: relative;
+        top: -200px;
+    }
+
+    .logos {
+        padding: 8%;
+        clear: both;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 160px 80px 0px 20px;   
+    }
+
+    section .button:hover {
+        background: white;
+        font-size: 24px;
+        margin-top: 29px;
     }
 }
