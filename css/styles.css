@@ -1,14 +1,14 @@
 .header {
     list-style: none;
     color: lavender;
-    margin: 50px 0 0 0;
+    margin: 50px auto;
     text-align: right;
 }
 
 li {
     display: inline-block;
     padding-right: 16%;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 a:-webkit-any-link {
@@ -71,7 +71,7 @@ body {
     background-image: url('../images/background.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: #47C888;
+    background-color: rgb(58, 168, 113);
     color: lavender;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .contact {
-    margin-top: 20px;
+    margin-top: 20px auto;
 }
 
 section div {
@@ -91,7 +91,7 @@ section div {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .logos {
@@ -105,7 +105,7 @@ section div {
 .logos figure {
     display: inline-block;
     width: auto;
-    margin: auto;
+    margin: 0 auto;
     padding: 25px;
     margin: 2px;
     position: relative;
@@ -123,3 +123,16 @@ figure {
     width: 50px;
     height: 50px;
 }
+
+@media (max-width: 991px) {
+    .latest-posted-tasks-big {
+      text-align: center;
+    }
+    .latest-posted-tasks-big > * {
+      text-align: initial;
+    }
+    .latest-posted-tasks-big > .grid_task {
+      display: inline-block;
+      float: none;
+    }
+  }
