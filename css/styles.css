@@ -1,8 +1,13 @@
 .header {
+    padding: 10px 16px;
     list-style: none;
     color: lavender;
-    margin: 50px auto;
     text-align: right;
+}
+
+
+ul {
+    margin-top: 0px;
 }
 
 .element::-webkit-scrollbar { width: 0 !important }
@@ -10,7 +15,7 @@
 li {
     display: inline-block;
     padding-right: 16%;
-    margin: 10px auto;
+   margin: 10px auto;
 }
 
 a:-webkit-any-link {
@@ -24,11 +29,13 @@ a {
     
 }
 
+/* Headers hover for the buttons */
 a:hover {
     color: #3FD2A3;
 }
 
 .home {
+    padding-right: -200px;
     margin-top: 120px;
     margin-bottom: 20px;
 }
@@ -53,8 +60,8 @@ section .button {
     display: inline-flex;
     padding: 6px;
     margin-top: 30px;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
     border: none;
     border-radius: 5px;
     
@@ -71,26 +78,60 @@ section .button:hover {
 html {
     scroll-behavior: smooth;
     height: 100%;
+    margin: auto;
   }
 
 body {
+    margin: 0px;
     height: 100%;
-    flex-wrap: wrap;
     font-family: 'Amaranth';font-size: 22px;
-    background-image: url('../images/background.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
     background-color: rgb(58, 168, 113);
     color: lavender;
 }
 
-.mem {
+.aboutMe {
     margin-top: 500px;
     height: 500;
 }
 
+.InfoAbout {
+    text-align: center;
+    padding: 200px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: #10bea8;
+    font-size: 40px;
+}
+
 .contact {
     margin-top: 20px auto;
+}
+
+.plugins {
+    margin-top: 100px;
+    /*margin-bottom: 100px;*/
+    text-align: center;
+    font-size: 50px;
+}
+
+.borderPlugins {
+    background-color: #10be8a;
+    margin-top: 200px;
+    text-align: left;
+    border-style: solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.pluginsName {
+    border-style: solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.pluginsName:hover {
+    background-color: #10bea8;
 }
 
 section div {
@@ -105,7 +146,6 @@ section div {
 }
 
 .logos {
-    padding: 8%;
     clear: both;
     text-align: center;
     margin-left: auto;
@@ -113,12 +153,15 @@ section div {
     
 }
 
+
 .logos figure {
     display: inline-block;
     width: auto;
     margin: 0 auto;
-    padding: 25px;
+    padding: 10px;
+    padding-top: -100px;
     margin: 2px;
+    margin-top: 0px;
     position: relative;
     top: -200px;
 }
@@ -130,148 +173,95 @@ figure {
     margin-inline-start: 40px;
     margin-inline-end: 40px;
 }
+
 .logos figure img {
     width: 50px;
     height: 50px;
 }
-  
-@media screen and (max-width: 1140px) {
-    section nav {
-        font-size: 24px;
-        line-height: 36px;
-        text-align: left;
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    li {
-        font-size: 24px;
-        padding-right: 8%;
-    }
-
-
-
-    .logos {
-        padding: 8%;
-        clear: both;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 80px 50px 0px 80px;   
-    }
-
-    .logos figure img {
-        width: 50px;
-        height: 50px;
-    }
-
-
-    figure figcaption {
-        font-family: 'Roboto Black';
-        font-size: 24px;
-        margin-top: 10px;
-        margin-bottom: 100px;
-    }
+.footer {
+    background-color: rgb(61, 56, 56);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: solid;
+    border-color: chartreuse;
 }
 
-@media screen and (max-width: 760px) {
-    li {
-        font-size: 20px;
-        padding-right: 8%;
-    }
-
-    section nav {
-        font-size: 14px;
-        line-height: 26px;
-        
-    }
-
-    a {
-        text-decoration: none;
-        color: lavender;
-        font-size: 20px;
-        
-    }
-
-    .logos {
-        padding: 8%;
-        clear: both;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 160px 30px 0px 80px;   
-    }
-
-
-
-    .logos figure img {
-        width: 50px;
-        height: 50px;
-    }
-
-    section .button {
-        font-size: 24px;
-    }
-
-    section .button:hover {
-        background: white;
-        font-size: 24px;
-        margin-top: 29px;
-    }
-
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* STYLES GO HERE */
 }
-
-@media screen and (max-width: 600px) {
-    li {
-        font-size: 12px;
-        padding-right: 8%;
-    }
-
-    section nav {
-        font-size: 14px;
-        line-height: 26px;
-        
-    }
-
-    a {
-        text-decoration: none;
-        color: lavender;
-        font-size: 20px;
-        
-    }
-
-    section .button {
-        font-size: 24px;
-    }
-
-    .logos figure img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .logos figure {
-        display: inline-block;
-        width: auto;
-        margin: 20 auto;
-        padding: 25px;
-        margin: 2px;
-        position: relative;
-        top: -200px;
-    }
-
-    .logos {
-        padding: 8%;
-        clear: both;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 160px 80px 0px 20px;   
-    }
-
-    section .button:hover {
-        background: white;
-        font-size: 24px;
-        margin-top: 29px;
-    }
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* STYLES GO HERE */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
 }
