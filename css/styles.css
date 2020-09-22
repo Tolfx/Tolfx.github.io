@@ -1,0 +1,76 @@
+/* Remove all padding and margin of everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(65, 61, 61);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Everything in main shall have this font */
+main {
+  font-family: "Heebo", sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: rgba(73, 69, 69, 0.178);
+  position: sticky;
+  top: 0;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: rgb(190, 188, 188);
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 20px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header a:hover {
+  background-color: #ddd;
+}
+
+.big-text {
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  color: rgb(104, 180, 127);
+}
+
+.information {
+  position: relative;
+  text-align: center;
+  margin-top: 10%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.intro-text {
+  font-size: 1rem;
+  color: rgb(154, 185, 163);
+}
+
+.container {
+  font-size: 2rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#box-green {
+  background-color: teal;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-right: 40%;
+  margin-left: 40%;
+}

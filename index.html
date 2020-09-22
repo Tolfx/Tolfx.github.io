@@ -1,9 +1,48 @@
+<?php
+
+$domainName = 'tolfx.dev';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/animation.js"></script>
     <title>Tolfx</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="header">
+        <a id="nameDomain">tolfx.dev</a>
+        <div class="header-right">
+          <a>Home</a>
+          <a>Contact</a>
+          <a>About</a>
+        </div>
+      </section>
+      <div class="information">
+        <h2 class="big-text">Tolfx dev</h2>
+        <p class="intro-text" style="margin-top: 10px">
+          I'm a developer that programs Javascript/Typescript
+        </p>
+      </div>
+
+      <div class="container">
+        <p id="box-green">More comming soon</p>
+      </div>
+    </main>
+  </body>
 </html>
