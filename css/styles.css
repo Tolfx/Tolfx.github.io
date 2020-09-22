@@ -68,7 +68,8 @@ main {
 }
 
 #box-green {
-  background-color: teal;
+  background-color: rgb(104, 180, 127);
+  box-shadow: 10px 10px rgb(190, 188, 188);
   border-radius: 10px;
   margin-top: 40px;
   margin-right: 40%;
