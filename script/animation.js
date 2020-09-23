@@ -23,5 +23,5 @@ powerOut_One.fromTo(
   { opacity: 0 },
   { opacity: 1, duration: 0.5 },
 );
-
 powerOut_One.fromTo(".payments", { opacity: 0 }, { opacity: 1, duration: 1 });
+powerOut_One.fromTo("footer", { opacity: 0 }, { opacity: 1, duration: 1 });

@@ -151,6 +151,23 @@ main {
   width: 10%;
 }
 
+footer {
+  margin-top: 40px;
+}
+
+footer p {
+  background-color: rgb(73, 68, 68);
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+footer a {
+  background-color: rgb(73, 68, 68);
+  text-decoration: none;
+  color: rgb(149, 229, 153);
+}
+
 /* For mobile users */
 @media screen and (max-width: 462px) {
   .header h1#nameDomain {
