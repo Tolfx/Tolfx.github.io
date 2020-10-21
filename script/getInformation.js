@@ -26,7 +26,7 @@ function printInformation() {
       const commitsLength = commitJSON.length;
 
       let text = `
-      Repo: <a href="${item.html_url}">${item.name}</a>
+      Repo: <a href="${item.html_url}" target="_blank">${item.name}</a>
       <br/>
       Language: ${item.language}
       <br/>
@@ -65,7 +65,7 @@ function printInformation() {
     <br/>
     Github Information: 
     <br/>
-    <a href="${data.html_url}">Link to github</a>
+    <a href="${data.html_url}" target="_blank">Link to github</a>
     <br/> 
     Repos: ${data.public_repos} 
     <br/> 
@@ -79,7 +79,7 @@ function printInformation() {
     <a id="contacts">Contacts</a>:<br/>
     Email: ${email}
     <br/>
-    Twitter: <a href="${twitterURL}">@Tolfx</a>
+    Twitter: <a href="${twitterURL}" target="_blank">@Tolfx</a>
     <br/>
     <br/>
     <hr/>
