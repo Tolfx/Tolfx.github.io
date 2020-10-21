@@ -4,9 +4,9 @@ const powerOut_One = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 powerOut_One.to(
   ".container",
-  { y: "-50%", duration: 1, stagger: 0.25 },
+  { y: "-50%", duration: 1, stagger: 0.5 },
 );
-powerOut_One.fromTo(".header", { opacity: 0 }, { opacity: 1, duration: 1 });
+powerOut_One.fromTo(".header", { opacity: 0 }, { opacity: 1, duration: 0.5 });
 powerOut_One.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 0.5 });
 powerOut_One.fromTo(
   ".intro-text",
@@ -21,14 +21,14 @@ powerOut_One.fromTo(
 powerOut_One.fromTo(
   ".flexbox-container",
   { opacity: 0 },
-  { opacity: 1, duration: 0.5 },
+  { opacity: 1, duration: 0.25 },
 );
 
-powerOut_One.fromTo("#repos-text", { opacity: 0 }, { opacity: 1, duration: 1 });
+powerOut_One.fromTo("#repos-text", { opacity: 0 }, { opacity: 1, duration: 0.25 });
 powerOut_One.fromTo(
   ".flexbox-repo",
   { opacity: 0 },
-  { opacity: 1, duration: 1 },
+  { opacity: 1, duration: 0.25 },
 );
-powerOut_One.fromTo(".payments", { opacity: 0 }, { opacity: 1, duration: 1 });
-powerOut_One.fromTo("footer", { opacity: 0 }, { opacity: 1, duration: 1 });
+powerOut_One.fromTo(".payments", { opacity: 0 }, { opacity: 1, duration: 0-25 });
+powerOut_One.fromTo("footer", { opacity: 0 }, { opacity: 1, duration: 0.25 });
